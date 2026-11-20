@@ -1,0 +1,41 @@
+# === Telegram ===
+# Токен от @BotFather
+BOT_TOKEN=123456:ABC-DEF...
+# ID канала (-100...) или @username канала. Бот должен быть администратором канала с правом публикации.
+CHANNEL_ID=@your_channel
+# ID администраторов через запятую (узнать свой: @userinfobot)
+ADMIN_IDS=123456789
+
+# === Расписание ===
+# Формат: ЧЧ:ММ:тип, через запятую. Типы: price | news | promo | auto
+# auto = бот сам выберет (новость, если есть свежая, иначе промо)
+SCHEDULE=10:00:price,13:00:news,17:00:promo,20:00:news
+TIMEZONE=Asia/Yekaterinburg
+
+# === Курсы (CoinGecko) ===
+# Ключ не обязателен для публичного API. Если есть demo-ключ — вставьте.
+COINGECKO_API_KEY=
+# ID монет на CoinGecko через запятую в формате тикер=id.
+# ВАЖНО: проверьте id GRAM на coingecko.com (страница монеты -> "API id"). Если GRAM не торгуется — удалите его из списка.
+COINS=TON=the-open-network,GRAM=gram
+VS_CURRENCIES=usd,rub
+
+# === Новости ===
+# Поисковые запросы (Google News RSS), через ; (точка с запятой)
+NEWS_QUERIES=Telegram Stars;Telegram подарки NFT;GRAM криптовалюта;Fragment TON Telegram
+NEWS_LANG=ru
+NEWS_COUNTRY=RU
+# Доп. RSS-ленты через запятую (необязательно)
+EXTRA_RSS=
+# Брать новости не старше N часов
+NEWS_MAX_AGE_HOURS=72
+# Слова-фильтры: новость должна содержать хотя бы одно (через запятую, регистр не важен)
+NEWS_KEYWORDS=stars,звезд,gift,подар,nft,gram,грам,fragment,ton,telegram
+
+# === Оформление постов ===
+CTA_TEXT=⭐ Звёзды и подарки с мишками — пишите @zoro242
+HASHTAGS=#Stars #GRAM #TelegramGifts
+
+# === Прочее ===
+LOG_LEVEL=INFO
+DATA_DIR=data
